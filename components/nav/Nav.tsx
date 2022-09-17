@@ -10,7 +10,7 @@ function Nav({}: Props) {
         <Logo />
       </div>
 
-      <ul className="flex mr-4 space-x-4 justify-evenly">
+      <ul className="flex mr-4 space-x-6 justify-evenly">
         <li className="font-mono text-xl transition-all duration-300 border-b-2 cursor-pointer border-b-white hover:border-black">
           Home
         </li>
