@@ -57,7 +57,7 @@ function Footer({}: Props) {
       <div className="flex flex-row max-w-screen-xl mx-auto">
         {/* LEFT */}
         <div className="h-64 p-8">
-          <div className="flex m-2 mx-auto mt-0 mb-4 rounded-md cursor-pointer lg:w-72 hover:shadow-md">
+          <div className="flex m-2 mx-auto mt-0 mb-4 lg:w-72">
             <div className="p-1">
               <Logo />
             </div>
