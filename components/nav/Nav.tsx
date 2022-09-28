@@ -9,7 +9,7 @@ function Nav({}: Props) {
   const router = useRouter();
 
   return (
-    <nav className="flex flex-row items-center justify-between w-full h-24">
+    <nav className="flex flex-row items-center justify-between w-full h-24 border-b">
       <div className="p-1 ml-12 rounded-md cursor-pointer hover:shadow-md" onClick={() => router.push("/")}>
         <Logo />
       </div>
