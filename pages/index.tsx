@@ -17,6 +17,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import dynamic from "next/dynamic";
+import BlogSection from "../components/BlogSection";
 
 const features = [
   {
@@ -88,8 +89,6 @@ export default function Example() {
     darkMode = document.getElementsByTagName("html")[0].className === "dark" ? true : false; // true if dark mode is enabled.
   }
 
-  console.log(darkMode);
-
   return (
     <div className="relative bg-gray-50">
       <main className="lg:relative">
@@ -134,6 +133,9 @@ export default function Example() {
           />
         </div>
       </main>
+      <section>
+        <BlogSection />
+      </section>
     </div>
   );
 }

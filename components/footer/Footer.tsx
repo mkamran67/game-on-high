@@ -136,28 +136,6 @@ function Footer({}: Props) {
                 ))}
               </div>
             </div>
-            <form className="flex items-end mt-24">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="email-address"
-                id="email-address"
-                autoComplete="email"
-                required
-                className="w-full min-w-0 px-4 py-2 text-base text-gray-900 placeholder-gray-500 bg-white border border-transparent rounded-md appearance-none focus:border-white focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 sm:max-w-xs"
-                placeholder="Enter your email"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="flex items-center justify-center w-full px-4 py-2 font-mono text-base text-green-500 bg-black border border-transparent rounded-md shadow-lg hover:bg-white focus:outline-none focus:ring-2 hover:text-black focus:ring-green-300 focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

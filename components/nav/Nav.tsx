@@ -10,14 +10,18 @@ function Nav({}: Props) {
 
   return (
     <nav className="flex flex-row items-center justify-between w-full h-24 border-b">
+      {/* Logo */}
       <div className="p-1 ml-12 rounded-md cursor-pointer hover:shadow-md" onClick={() => router.push("/")}>
         <Logo />
       </div>
-
-      <ul className="flex mr-4 space-x-6 justify-evenly">
+      {/* Center Nav */}
+      <ul className="flex space-x-6 justify-evenly">
         <li className="font-mono text-xl transition-all duration-300 border-b-2 cursor-pointer border-b-white hover:border-black">
           <Link href="/">
-            <a>Home</a>
+            <a>
+              {/* <span className="text-xs">1.</span>Home */}
+              Home
+            </a>
           </Link>
         </li>
         <li className="font-mono text-xl transition-all duration-300 border-b-2 cursor-pointer border-b-white hover:border-black">
@@ -31,8 +35,21 @@ function Nav({}: Props) {
           </Link>
         </li>
       </ul>
-      <div className="mr-12">
-        <UserCircleIcon className="w-16 h-16 text-green-500 rounded-full cursor-pointer hover:shadow-lg" />
+      {/* Right Side */}
+      <div className="grid max-w-xs grid-cols-2 gap-4 mr-12">
+        {/* <UserCircleIcon className="w-16 h-16 text-green-500 rounded-full cursor-pointer hover:shadow-lg" /> */}
+        {/* <div className="mt-6"> */}
+
+        <Link href="/login">
+          <a className="px-4 py-2 my-auto text-center text-green-500 rounded-md cursor-pointer hover:text-green-700 hover:shadow-md">
+            Sign in
+          </a>
+        </Link>
+        <Link href="/signup   w">
+          <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-green-500 border border-transparent rounded-md shadow-sm hover:bg-green-700">
+            Sign up
+          </a>
+        </Link>
       </div>
     </nav>
   );
